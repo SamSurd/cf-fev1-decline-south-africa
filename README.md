@@ -67,4 +67,4 @@ MIT (see `LICENSE`).
 
 ## Contact
 
-Samuel P. Surdut, Department of Medicine, University of Cape Town (s.p.surdut@gmail.com).
+Samuel P. Surdut, Department of Medicine, University of Cape Town (srdsam001@myuct.ac.za, medicine@surdut.com).
