@@ -1,0 +1,85 @@
+# CITATION.cff — place this file in the root of the repository (next to README and LICENSE).
+# GitHub reads it for the "Cite this repository" button; Zenodo reads it when it archives a release.
+# Lines starting with "#" are comments and are ignored.
+
+cff-version: 1.2.0
+message: >-
+  If you use this code, please cite it using the metadata in this file.
+  Please also cite the accompanying article (listed under "references")
+  once it is published.
+type: software
+title: "Analysis code for: Determinants of FEV1 decline in cystic fibrosis in South Africa: a longitudinal cohort"
+abstract: >-
+  R code for the analyses reported in "Determinants of FEV1 decline in cystic
+  fibrosis in South Africa: a longitudinal cohort", a study of the South African
+  Cystic Fibrosis Registry (manuscript under revision at the Journal of Cystic
+  Fibrosis). The repository holds 21 R scripts in run order - data preparation,
+  linear mixed-effects models of FEV1 percent predicted, CFTR-modulator and
+  event-anchored infection and exacerbation models, sensitivity analyses, table
+  and figure generation, and QA scripts - together with a run_all.sh driver, a
+  README describing what each script produces and where it appears in the
+  manuscript, and an R session record (R 4.5.2; lme4, lmerTest, performance).
+  Registry data are not included: they contain patient-level health information
+  and are available on reasonable request from the South African Cystic Fibrosis
+  Registry steering committee. With the registry file in place, the pipeline
+  reproduces all reported outputs.
+authors:
+  # Keep the same order as the manuscript title page.
+  - family-names: Surdut
+    given-names: Samuel P.
+    affiliation: "Division of Pulmonology, Department of Medicine, University of Cape Town and Groote Schuur Hospital, Cape Town, South Africa"
+    # orcid: https://orcid.org/0000-0000-0000-0000   <- add yours
+  - family-names: Zampoli
+    given-names: Marco
+    affiliation: "Division of Paediatric Pulmonology, Department of Paediatrics and Child Health, University of Cape Town and Red Cross War Memorial Children's Hospital, Cape Town, South Africa"
+    orcid: https://orcid.org/0000-0002-6899-6137   # from his ERJ Open Research 2021 paper; confirm against the title page
+  - family-names: Verstraete
+    given-names: Janine
+    affiliation: "Department of Paediatrics and Child Health, University of Cape Town, Cape Town, South Africa"
+    # orcid: https://orcid.org/0000-0000-0000-0000   <- add from the title page
+  - family-names: Calligaro
+    given-names: Gregory L.
+    affiliation: "Division of Pulmonology, Department of Medicine, University of Cape Town and Groote Schuur Hospital, Cape Town, South Africa"
+    # orcid: https://orcid.org/0000-0000-0000-0000   <- add from the title page
+version: 1.0.0
+date-released: "2026-11-09"   # change to the day you cut the v1.0.0 release
+repository-code: "https://github.com/SamSurd/cf-fev1-decline-south-africa"
+license: MIT
+keywords:
+  - cystic fibrosis
+  - FEV1
+  - lung function decline
+  - CFTR modulators
+  - Pseudomonas aeruginosa
+  - Staphylococcus aureus
+  - pulmonary exacerbations
+  - patient registry
+  - South Africa
+  - longitudinal cohort
+  - linear mixed-effects models
+  - event-anchored analysis
+  - R
+# After the first Zenodo release, add the concept DOI (the one that always points to the latest version):
+# identifiers:
+#   - type: doi
+#     value: 10.5281/zenodo.XXXXXXX
+#     description: "Zenodo concept DOI for all versions of this code"
+references:
+  # The article this code belongs to. Update status, year, volume, pages and DOI on publication.
+  # If you would rather the paper be cited instead of the code, rename this block
+  # "preferred-citation" (a single entry, not a list) once the paper is published.
+  - type: article
+    title: "Determinants of FEV1 decline in cystic fibrosis in South Africa: a longitudinal cohort"
+    authors:
+      - family-names: Surdut
+        given-names: Samuel P.
+      - family-names: Zampoli
+        given-names: Marco
+      - family-names: Verstraete
+        given-names: Janine
+      - family-names: Calligaro
+        given-names: Gregory L.
+    journal: "Journal of Cystic Fibrosis"
+    status: submitted
+    year: 2026
+    notes: "Revised manuscript under review (JCF-D-26-00377)."
